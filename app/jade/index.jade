@@ -8,6 +8,7 @@ html(lang="en")
 		link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="C2416A10-77BA-46A4-B2E0-BC1C17E8AB21" crossorigin="anonymous")
 		script(src="js/libs.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
 		script(src="js/common.js")
@@ -15,11 +16,243 @@ html(lang="en")
 				section(class="nav-bar wrapper")
 					.nav-top.wrapper
 						.top-left.wrapper
-							.left-phone-icon.wrapper(style="background-image:url(../img/phone.jpg)")
-							.left-num.wrapper +1 123 456 789
-							.left-mail.wrapper info@company.com
-						.top-right.wrapper icons of social
+							.num-container.wrapper
+								i.fa.fa-phone.fa-2x
+								.left-num.wrapper +1 123 456 789
+							.mail-container.wrapper
+								i.fa.fa-envelope.fa-2x
+								.left-mail.wrapper info@company.com
+						.top-right.wrapper
+							i.fab.fa-facebook-f.fa-2x
+							i.fab.fa-twitter.fa-2x
+							i.fab.fa-instagram.fa-2x
+							i.fab.fa-linkedin-in.fa-2x
+							i.fab.fa-behance.fa-2x
 					.nav-down.wrapper
-						.down-logo
-						.dawn-menu
-						.dawn-icons
+						.down-logo.wrapper RENOSHOP
+							.word-continue BEE
+						.down-menu.wrapper
+							a.wrapper HOME
+							a.wrapper WOMEN
+							a.wrapper MEN
+							a.wrapper KIDS
+							a.wrapper JEWELLERRY
+							a.wrapper ACCESSORIES
+						.down-icons.wrapper
+							i.fa.fa-shopping-cart.fa-2x
+							i.fa.fa-search.fa-2x
+							i.fa.fa-bars.fa-2x
+				section(class="slider wrapper")
+					.slider-content.wrapper
+						.content-topic.wrapper
+							.topic-start THE BEST
+							.topic-continue WOOCOMMERCE
+						.content-text.wrapper Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.content-btn
+							button BUY NOW
+				section(class="sellers wrapper")
+					.sellers-best.wrapper
+						.best-topic BEST SELLERS
+						.best-sentence The best production from us
+						.best-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					.sellers-first.wrapper
+						.first-img.wrapper
+							.first-icons.wrapper
+								.shopping.wrapper
+									i.fa.fa-shopping-cart.fa-2x
+								.heart.wrapper
+									i.fa.fa-heart.fa-2x
+								.refresh.wrapper
+									i.fas.fa-retweet.fa-2x
+						.first-title Cruise Dual analog
+						.first-price $250.00
+						.first-stars
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+					.sellers-second.wrapper
+						.second-img
+						.second-title Crown Summit Backpack
+						.second-price $250.00
+						.second-stars
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+					.sellers-third.wrapper
+						.third-img
+						.third-title Joust Duffle Bag
+						.third-price $250.00
+						.third-stars
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+					.sellers-fourth.wrapper
+						.fourth-img
+						.fourth-title Voyage Yoga Bag
+						.fourth-price $250.00
+						.fourth-stars
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+							i.fa.fa-star
+				section(class="staic-blocks wrapper")
+					.block-special.wrapper
+						.special-img
+							i.fas.fa-gem.fa-3x
+						.special-topic SPECIAL OFFERS
+						.special-text Shop Big Save Big
+					.block-free.wrapper
+						.free-img
+							i.fab.fa-telegram-plane.fa-3x
+						.free-topic FREE DELIVERY
+						.free-text On Orders Above $99
+					.block-return.wrapper
+						.return-img
+							i.fas.fa-retweet.fa-3x
+						.return-topic 30 DAYS RETURN
+						.return-text Policy We Offers
+					.block-shipping.wrapper
+						.shipping-img
+							i.fas.fa-rocket.fa-3x
+						.shipping-topic FASTEST SHIPPING
+						.shipping-text 2 Day Express
+				section(class="categories wrapper")
+					.first-cantainer.wrapper
+						.container-content.wrapper
+							.content.wrapper
+								.categorie FASHIOM
+								.topic SUMMER & AUTUMN
+								.collection WINTER COLLECTION
+					.second-cantainer.wrapper
+						.container-content.wrapper
+							.content.wrapper
+								.categorie FASHION FOR MEN
+								.topic 30% OFF
+								.collection WINTER COLLECTION
+					.third-cantainer.wrapper
+						.container-content.wrapper
+							.content.wrapper
+								.categorie FASHION
+								.topic NEW FASHION STYLES
+								.collection WINTER COLLECTION
+				section(class="products wrapper")
+					.products-title.wrapper
+						.title FEATURED PRODUCTS
+						.sentence Newest trends from top brends
+					.products-container.wrapper
+						.product
+							.product-img
+							.product-title Cruise Dual Analog
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Crown Summit Backpack
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Joust Duffle Bag
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Voyage Yoga Bag
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Compete Truck Tote
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Sprite Yoga Companion Kit
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Strive Shoulder Pack
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Impulse Duffle
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Fusion Backpack
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+						.product
+							.product-img
+							.product-title Endeavor Daytrip
+							.product-price $250.00
+							.product-stars
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+								i.fa.fa-star
+				section(class="subscribe-clients wrapper")
+					section(class="subscribe wrapper")
+						.subscripe-topic Get Out Special Discount
+						.subscribe-text Donec eu tristique felis. Duis augue mi, auctor ut purus et, dignissim aliquet quam. register your email for news and special offers
+						.subscribe-form
+							input
+							button GET COUPON NOW
+					section(class="clients wrapper")
+				section(class="footes")

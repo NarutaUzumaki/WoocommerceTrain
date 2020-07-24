@@ -4,7 +4,6 @@
   flex-direction: column
   height: 150px
   width: 100%
-  border: solid 1px red
   .nav-top
     height: 50px
     background-color: $bg-color-black
@@ -12,33 +11,282 @@
     justify-content: space-between
     .top-left
       margin-left: 60px
-      border: solid 1px blue
       height: 100%
-      width: 15%
+      width: 20%
       align-self: flex-start
-      justify-content: space-around
-      .left-phone-icon
-        background-size: contain
-      .left-num
-        color: $txt-color-white
+      justify-content: space-between
+      .num-container
+        width: 45%
+        justify-content: space-between
         align-items: center
-        align-content: center
-      .left-mail
         color: $txt-color-white
+        .left-num
+          align-items: center
+          align-content: center
+      .mail-container
+        width: 45%
         align-items: center
-        align-content: center
+        justify-content: space-between
+        color: $txt-color-white
+        .left-mail
+          align-items: center
+          align-content: center
     .top-right
       margin-right: 60px
-      border: solid 1px blue
       height: 100%
       width: 15%
-
       color: $txt-color-white
+      justify-content: space-around
+      align-items: center
+      i
+        cursor: pointer
+  .nav-down
+    height: 100px
+    background-color: $bg-color-white
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    .down-logo
+      align-content: center
+      cursor: pointer
+      font-size: 25px
+      font-weight: bold
+      color: $txt-color-green
+      .word-continue
+        color: $txt_color-black
+    .down-menu
+      width: 40%
+      align-content: space-around
+      align-items: center
+      justify-content: space-around
+      a
+        cursor: pointer
+        font-weight: bold
+        color: $txt-color-black
+        transition: 1s
+        &:hover
+          color: $txt-color-green
+    .down-icons
+      width: 10%
+      align-content: space-around
+      align-items: center
+      justify-content: space-around
+      i
+        cursor: pointer
+.slider
+  height: 800px
+  background-color: $bg-color-black
+  color: $txt-color-gray
+  justify-content: flex-start
+  align-items: center
+  align-content: center
+  .slider-content
+    margin-left: 25%
+    flex-direction: column
+    width: 510px
+    .content-topic
+      flex-direction: column
+      font-weight: bold
+      font-size: 60px
+      .topic-continue
+        color: $txt-color-green
+    .content-text
+      font-weight: bold
+      font-size: 16px
+    .content-btn
+      padding-top: 25px
+      button
+        border: solid 2px $border-color-gray
+        background-color: $bg-color-black
+        font-size: 18px
+        font-weight: bold
+.sellers
+  padding-top: 20px
+  padding-bottom: 50px
+  flex-direction: row
+  justify-content: space-around
+  .sellers-best
+    flex-direction: column
+    width: 300px
+    height: 515px
+    align-content: center
+    justify-content: center
+    .best-topic
+      font-size: 25px
+      font-weight: bold
+    .best-sentence
+      font-style: italic
+      color: $txt-color-green
+    .best-text
+      padding-top: 15px
+      font-size: 15px
+      font-weight: bold
+      text-align: left
+  .sellers-first,
+  .sellers-second,
+  .sellers-third,
+  .sellers-fourth
+    flex-direction: column
+    .first-img
+      flex-direction: row
+      justify-content: flex-end
+      .first-icons
+        margin-right: 10px
+        height: 300px
+        flex-direction: column
+        align-content: space-around
+        align-items: center
+        div
+          justify-content: center
+          align-items: center
+          margin-top: 10px
+          width: 40px
+          height: 40px
+          background-color: $bg-color-green
+          color: $txt-color-white
+          i
+            cursor: pointer
+    .first-img,
+    .second-img,
+    .third-img,
+    .fourth-img
+      height: 450px
+      width: 300px
+      background-color: $bg-color-black
+    .first-title,
+    .second-title,
+    .third-title,
+    .fourth-title
+      font-weight: bold
+      font-size: 16px
+    .first-price,
+    .second-price,
+    .third-price,
+    .fourth-price
+      color: $txt-color-green
+      font-size: 16px
+    .first-stars,
+    .second-stars,
+    .third-stars,
+    .fourth-stars
+      color: $star-color-orange
+.staic-blocks
+  height: 200px
+  background-color: $bg-color-lightgray
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-evenly
+  i
+    cursor: pointer
+  .block-special,
+  .block-free,
+  .block-return,
+  .block-shipping
+    height: 100%
+    width: 25%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    font-weight: bold
+    .special-topic,
+    .free-topic,
+    .return-topic,
+    .shipping-topic
+      padding-top: 25px
+    .special-text,
+    .free-text,
+    .return-text,
+    .shipping-text
+      font-size: 12px
+      color: $txt-color-gray
+.categories
+  flex-direction: row
+  height: 640px
+  .first-cantainer,
+  .second-cantainer,
+  .third-cantainer
+    width: 100%
+    background-color: $bg-categories-color
+    justify-content: center
+    align-items: center
+    .container-content
+      border: double 4px gray
+      height: 400px
+      width: 400px
+      transform: rotate(45deg)
       justify-content: center
       align-items: center
-  .nav-dawn
-    height: 100px
+      align-content: center
+      .content
+        transform: rotate(-45deg)
+        width: 100%
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        color: $txt-color-white
+        .categorie
+          font-size: 20px
+          letter-spacing: 12px
+          font-weight: bold
+        .topic
+          font-size: 32px
+          font-weight: bolder
+        .collection
+          font-size: 20px
+          letter-spacing: 10px
+          font-weight: bold
+  .second-cantainer
+    background-color: $bg-categories-center-color
+.products
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+  .products-title
+    padding-top: 70px
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 40px
+    .title
+      font-weight: bold
+      font-size: 24px
+    .sentence
+      color: $txt-color-green
+      font-style: italic
+  .products-container
+    width: 100%
+    flex-direction: row
+    justify-content: space-evenly
+    flex-wrap: wrap
+    .product
+      width: 350px
+      padding-bottom: 20px
+      .product-img
+        width: 300px
+        background-color: $txt-color-black
+        height: 450px
+      .product-title
+        font-weight: bold
+        font-size: 16px
+      .product-price
+        color: $txt-color-green
+        font-size: 16px
+      .product-stars
+        color: $star-color-orange
+.subscribe-clients
+  flex-direction: row
+  *
     border: solid 1px red
-    background-color: $bg-color-white
+  .subscribe
+    width: 50%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  .clients
+    width: 50%
+    background-color: $bg-color-lightgray
 
 
