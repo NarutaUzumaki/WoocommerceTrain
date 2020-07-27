@@ -15,13 +15,13 @@ html(lang="en")
 			body
 				include header
 				section(class="slider wrapper")
-                	.slider-content.wrapper
-                		.content-topic.wrapper
-                			.topic-start THE BEST
-                			.topic-continue WOOCOMMERCE
-                		.content-text.wrapper Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                		.content-btn
-                			button BUY NOW
+					.slider-content.wrapper
+						.content-topic.wrapper
+							.topic-start THE BEST
+							.topic-continue WOOCOMMERCE
+						.content-text.wrapper Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.content-btn
+							button BUY NOW
 				section(class="sellers wrapper")
 					.sellers-best.wrapper
 						.best-topic BEST SELLERS
@@ -119,107 +119,17 @@ html(lang="en")
 						.title FEATURED PRODUCTS
 						.sentence Newest trends from top brends
 					.products-container.wrapper
-						//each title in ["Cruise Dual Analog", "hui", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle" "Fusion Backpack", "Endeavor Daytrip"]
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-						.product
-							.product-img
-							.product-title Cruise Dual Analog
-							.product-price $250.00
-							.product-stars
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
-								i.fa.fa-star
+						each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack", "Endeavor Daytrip"]
+							.product
+								.product-img
+								.product-title= title
+								.product-price $250.00
+								.product-stars
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
+									i.fa.fa-star
 				section(class="subscribe-clients wrapper")
 					section(class="subscribe wrapper")
 						.subscripe-topic Get Out Special Discount

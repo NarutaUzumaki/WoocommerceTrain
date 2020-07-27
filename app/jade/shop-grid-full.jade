@@ -1,0 +1,75 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
+        link(rel="stylesheet", href="css/libs.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
+        link(rel="stylesheet", href="css/shop-grid-full.min.css")
+        link(rel="stylesheet", href="css/main.min.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="C2416A10-77BA-46A4-B2E0-BC1C17E8AB21" crossorigin="anonymous")
+        link(href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js")
+        script(src="js/libs.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
+            body
+            include header
+            section(class="path wrapper")
+                .pages
+                    a(href="index.html") Home
+                    >>
+                    a(href="#") Page
+                    >>
+                    a(href="#") Shop
+                    >>
+                    a(href="#") Checkout
+            section(class="grid wrapper")
+                .grid-filter-container.wrapper
+                    .grand-filter.wrapper
+                        .grand-categories
+                            .categories-topic CATEGORIES
+                            .categories-list
+                                ul
+                                    each elem in ["Accessories(15)", "Dress(50)", "Women(150)", "Men(150)", "Watch(150)", "Clothing(150)", "Bags(150)"]
+                                        li= elem
+                        .grand-prices
+                            .price-topic PRICE FILTER
+                            .price-selecter
+                                input(type="range")
+                            .price-nums-selecter.wrapper
+                                input(type="number")
+                                input(type="number")
+                                i.fa.fa-search.wrapper
+                    .grid-main.wrapper
+                        .filter.wrapper
+                            .filter-text Showing 1-12 of 44 results
+                            .filter-categories
+                                select
+                                    option Sort by newest
+                                    option Sort by oldest
+                                    option Sort by popularity
+                        .grid-container.wrapper
+                            each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack", "Endeavor Daytrip", "Word in classico", "Compete Track Tote"]
+                                .product
+                                    .product-img
+                                    .product-title= title
+                                    .product-price $250.00
+                                    .product-stars
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                        .grid-footer.wrapper
+                            .footer-nums-pages.wrapper
+                                a(href="#") 1
+                                a(href="#") 2
+                                a(href="#") 3
+                                a(href="#") 4
+                                a(href="#") 5
+                                p ...
+                                a(href="#") >
+                                a(href="#") >>
+            include footer

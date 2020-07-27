@@ -1,0 +1,173 @@
+@import "color"
+.path
+  width: 100%
+  flex-direction: row
+  justify-content: center
+  padding-bottom: 20px
+  .pages
+    width: 60%
+.cart
+  justify-content: center
+  .tbl-container
+    width: 60%
+    .tbl
+      width: 100%
+      height: 500px
+      text-align: center
+      font-weight: bold
+      border: 1px solid $bg-color-lightgray
+      tr
+        th
+          text-align: center
+      input
+        width: 20%
+        padding-left: 30px
+      tr
+        td
+          .product-info
+            justify-content: space-evenly
+            align-items: center
+            align-content: center
+            .img
+              border: 0px
+              background-color: $bg-color-black
+              width: 80px
+              height: 100px
+              .title
+                border: 0px
+          .tbl-footer
+            justify-content: flex-end
+            button
+              margin-left: 40px
+              height: 40px
+              font-size: 14px
+            .upd
+              color: $txt-color-black
+              background-color: $bg-color-white
+              border: solid 1px $bg-color-lightgray
+            .cont
+              color: $txt-color-white
+              background-color: $bg-color-green
+              border: 0px
+              margin-right: 40px
+.info
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+  font-weight: bold
+  .info-container
+    width: 60%
+    flex-direction: row
+    justify-content: space-between
+    .info-left
+      width: 47.5%
+      flex-direction: column
+      .coupon
+        flex-direction: column
+        padding-bottom: 50px
+        .coupon-topic
+          padding-bottom: 10px
+          font-size: 18px
+        .coupon-input
+          flex-direction: column
+          div
+            flex-direction: row
+            padding-bottom: 20px
+            input
+              width: 70%
+              padding-left: 20px
+            button
+              height: 50px
+              width: 30%
+              color: $txt-color-white
+              border: 0
+              background-color: $bg-color-green
+      .shipping
+        flex-direction: column
+        .shipping-topic
+          font-size: 18px
+          padding-bottom: 20px
+        .shipping-input
+          font-size: 16px
+          flex-direction: column
+          select,
+          input
+            height: 50px
+            padding-left: 20px
+          .country,
+          .state,
+          .postcode
+            padding-bottom: 10px
+    .info-right
+      width: 47.5%
+      flex-direction: column
+      .gift
+        flex-direction: column
+        padding-bottom: 50px
+        .gift-topic
+          font-size: 18px
+          padding-bottom: 10px
+        .gift-input
+          flex-direction: column
+          div
+            flex-direction: row
+            padding-bottom: 20px
+            input
+              width: 70%
+              padding-left: 20px
+            button
+              height: 50px
+              width: 30%
+              color: $txt-color-white
+              border: 0
+              background-color: $bg-color-green
+      .shopping
+        flex-direction: column
+        .shopping-topic
+          font-size: 18px
+          padding-bottom: 20px
+        .shopping-info
+          flex-direction: column
+          justify-content: space-between
+          border: solid 1px $bg-color-lightgray
+          font-size: 16px
+          height: 261px
+          .info-calculation
+            flex-direction: column
+            padding-bottom: 20px
+            justify-content: space-between
+            .subtotal,
+            .coupon,
+            .shipping
+              width: 100%
+              flex-direction: row
+              justify-content: space-between
+              padding-bottom: 20px
+          .info-total
+            justify-content: space-between
+            border: solid 1px $bg-color-lightgray
+            height: 35px
+  .info-footer
+    padding-top: 10px
+    width: 60%
+    flex-direction: row
+    justify-content: space-between
+    padding-bottom: 120px
+    button
+      margin-top: 10px
+      border-radius: 0px
+      border: solid 1px $bg-color-lightgray
+      width: 30%
+      height: 50px
+    .upd
+      width: 15%
+      background-color: $bg-color-white
+    .proceed
+      color: $txt-color-white
+      border: 0
+      background-color: $bg-color-green
+
+
+
+

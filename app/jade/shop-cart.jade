@@ -7,10 +7,120 @@ html(lang="en")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
 		link(rel="stylesheet", href="css/libs.min.css")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css")
+		link(rel="stylesheet", href="css/shop-cart.min.css")
 		link(rel="stylesheet", href="css/main.min.css")
 		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="C2416A10-77BA-46A4-B2E0-BC1C17E8AB21" crossorigin="anonymous")
+		link(href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet")
+		script(src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js")
 		script(src="js/libs.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
-		script(src="js/common.js")
 			body
 				include header
+				section(class="path wrapper")
+					.pages
+						a(href="index.html") Home
+						>>
+						a(href="#") Page
+						>>
+						a(href="#") Shop
+						>>
+						a(href="#") Cart
+				section(class="cart wrapper")
+					.tbl-container
+						table(class="tbl" border="1")
+							tr
+								th Products
+								th Color & Size
+								th Quantity
+								th Price
+								th Total
+							tr
+								td
+									.product-info.wrapper
+										.img
+										.title Casual men wearing cool shoe
+								td Size:XL Color:Black
+								td
+									input(type="number" value="1")
+								td $120
+								td $120
+							tr
+								td
+									.product-info.wrapper
+										.img
+										.title Casual men wearing cool shoe
+								td Size:XL Color:Black
+								td
+									input(type="number" value="1")
+								td $120
+								td $120
+							tr
+								td
+									.product-info.wrapper
+										.img
+										.title Casual men wearing cool shoe
+								td Size:XL Color:Black
+								td
+									input(type="number" value="1")
+								td $120
+								td $120
+							tr
+								td(colspan="5")
+									.tbl-footer.wrapper
+										button.upd UPDATE CART
+										button.cont CONTINUE SHOPPING
+				section(class="info wrapper")
+					.info-container.wrapper
+						.info-left.wrapper
+							.coupon.wrapper
+								.coupon-topic USE COUPON CODE
+								.coupon-input.wrapper
+									label Enter Your Coupon Here
+									div.wrapper
+										input(placeholder="Enter your coupon here")
+										button Apply
+							.shipping.wrapper
+								.shipping-topic SHIPPING AVAILABILITY
+								.shipping-input.wrapper
+									.country
+									label Select country
+									select(class="js-example-basic-single" name="country")
+										option Ukraine
+										option Viet Nam
+									.state
+									label Select State
+									select()
+										option TP.HCM
+									.postcode
+									label Postcode/Zip
+									input(placeholder="Postcode/Zip")
+						.info-right.wrapper
+							.gift.wrapper
+								.gift-topic USE GIFT VOUCHER
+								.gift-input.wrapper
+									label Enter Your Gift Voucher Here
+									div.wrapper
+										input(placeholder="Enter your gift voucher here")
+										button Apply
+							.shopping.wrapper
+								.shopping-topic SHOPPING CART CALCULATION
+								.shopping-info.wrapper
+									.info-calculation.wrapper
+										.subtotal.wrapper
+											div Subtotal
+											div $450
+										.coupon.wrapper
+											div Coupon
+											div - $50
+										.shipping.wrapper
+											div Shipping
+											div Free Shipping
+									.info-total.wrapper
+										div Total
+										div $400
+					.info-footer.wrapper
+						button.upd UPDATE TOTALS
+						button.proceed PROCEED TO CHECKOUT
+
+				include footer
+script(src="js/common.js")

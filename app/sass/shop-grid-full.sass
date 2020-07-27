@@ -1,0 +1,117 @@
+@import "color"
+.path
+  width: 100%
+  flex-direction: row
+  justify-content: center
+  padding-bottom: 20px
+  .pages
+    width: 60%
+.grid
+  width: 100%
+  flex-direction: row
+  justify-content: center
+  align-content: center
+  align-items: center
+  .grid-filter-container
+    width: 60%
+    justify-content: space-between
+    align-items: center
+    align-content: center
+    .grid-main
+      flex-direction: column
+      width: 75%
+      justify-content: center
+      align-content: center
+      align-items: center
+      .filter
+        width: 100%
+        flex-direction: row
+        justify-content: space-between
+        border-bottom: solid 1px $bg-color-lightgray
+        color: #a6a5a5
+        margin-bottom: 60px
+        select
+          border: 0
+      .grid-container
+        flex-direction: row
+        width: 100%
+        flex-wrap: wrap
+        justify-content: space-between
+        padding-bottom: 60px
+        .product
+          width: 270px
+          padding-bottom: 20px
+          margin: 0
+          .product-img
+            width: 270px
+            background-color: $txt-color-black
+            height: 450px
+          .product-title
+            font-weight: bold
+            font-size: 16px
+          .product-price
+            color: $txt-color-green
+            font-size: 16px
+          .product-stars
+              color: $star-color-orange
+      .grid-footer
+        border-bottom: solid 1px $bg-color-lightgray
+        border-top: solid 1px $bg-color-lightgray
+        width: 100%
+        justify-content: center
+        margin-bottom: 100px
+        .footer-nums-pages
+          width: 20%
+          justify-content: space-around
+          align-items: center
+          align-content: center
+          border-right: solid 1px $bg-color-lightgray
+          border-left: solid 1px $bg-color-lightgray
+          a
+            color: $txt-color-black
+            font-size: 18px
+            &:hover
+              color: orange
+    .grand-filter
+      flex-direction: column
+      height: 2385px
+      width: 25%
+      justify-content: flex-start
+      align-items: flex-start
+      align-content: flex-start
+      .grand-categories
+        border-bottom: solid 1px $bg-color-lightgray
+        width: 90%
+        .categories-topic
+          padding-bottom: 20px
+          font-weight: bold
+          font-size: 18px
+        .categories-list
+          ul
+            font-weight: bold
+            list-style-type: square
+            padding: 0
+            margin-left: 15px
+            li
+              padding-bottom: 20px
+      .grand-prices
+        .price-topic
+          font-weight: bold
+          font-size: 18px
+          padding-top: 20px
+          padding-bottom: 20px
+        .price-nums-selecter
+          width: 260px
+          justify-content: space-around
+          input
+            width: 100px
+          i
+            background-color: $bg-color-green
+            color: $txt-color-white
+            height: 30px
+            width: 30px
+            justify-content: center
+            align-content: center
+            align-items: center
+
+
