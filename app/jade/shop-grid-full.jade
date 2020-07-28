@@ -42,6 +42,56 @@ html(lang="en")
                                 input(type="number")
                                 input(type="number")
                                 i.fa.fa-search.wrapper
+                        .grand-size
+                            .size-topic SIZE
+                            .size-categories.wrapper
+                                div XS
+                                div S
+                                div M
+                                div L
+                                div SL
+                                div XL
+                                div XXL
+                        .grand-color
+                            .color-topic COLORS
+                            .color-selector
+                                div
+                                    input(type="checkbox" value="White" name="White")
+                                div
+                                    input(type="checkbox" value="White" name="Black")
+                                div
+                                    input(type="checkbox" value="White" name="Blue")
+                                div
+                                    input(type="checkbox" value="White" name="Yellow")
+                        .grand-rated
+                            .rated-topic TOP RATED
+                            .rated-selector.wrapper
+                                div.wrapper
+                                    .img
+                                    .content.wrapper
+                                        .txt Casual men wearing cool shoe
+                                        .price $250.00
+                                div.wrapper
+                                    .img
+                                    .content.wrapper
+                                        .txt Casual men wearing cool shoe
+                                        .price $250.00
+                                div.wrapper
+                                    .img
+                                    .content.wrapper
+                                        .txt Casual men wearing cool shoe
+                                        .price $250.00
+                        .grand-banner.wrapper
+                            .banner-container.wrapper
+                                .banner-content.wrapper
+                                    .content-stars
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                    .content-topic UP TO 30% OFF
+                                    .content-delimiter ___
+                                    .content-txt Hot & Trendy Clother
+
                     .grid-main.wrapper
                         .filter.wrapper
                             .filter-text Showing 1-12 of 44 results
@@ -51,7 +101,7 @@ html(lang="en")
                                     option Sort by oldest
                                     option Sort by popularity
                         .grid-container.wrapper
-                            each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack", "Endeavor Daytrip", "Word in classico", "Compete Track Tote"]
+                            each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack"]
                                 .product
                                     .product-img
                                     .product-title= title

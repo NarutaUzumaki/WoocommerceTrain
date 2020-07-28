@@ -45,7 +45,7 @@
           .product-img
             width: 270px
             background-color: $txt-color-black
-            height: 450px
+            height: 400px
           .product-title
             font-weight: bold
             font-size: 16px
@@ -74,7 +74,7 @@
               color: orange
     .grand-filter
       flex-direction: column
-      height: 2385px
+      height: 1715px
       width: 25%
       justify-content: flex-start
       align-items: flex-start
@@ -95,6 +95,8 @@
             li
               padding-bottom: 20px
       .grand-prices
+        border-bottom: solid 1px $bg-color-lightgray
+        padding-bottom: 30px
         .price-topic
           font-weight: bold
           font-size: 18px
@@ -110,8 +112,98 @@
             color: $txt-color-white
             height: 30px
             width: 30px
+            padding-top: 7px
+            text-align: center
+      .grand-size
+        padding-top: 20px
+        width: 92%
+        border-bottom: solid 1px $bg-color-lightgray
+        padding-bottom: 20px
+        .size-topic
+          font-weight: bold
+          font-size: 18px
+          padding-bottom: 20px
+        .size-categories
+          flex-direction: row
+          flex-wrap: wrap
+          justify-content: space-between
+          align-items: center
+          align-content: center
+          width: 80%
+          div
+            cursor: pointer
+            width: 15%
+            border: solid 1px $bg-color-lightgray
+            text-align: center
+            transition: 1s
+            margin-bottom: 10px
+            &:hover
+              background-color: $bg-color-green
+              color: $txt-color-white
+              border: 0
+      .grand-color
+        padding-top: 20px
+        width: 92%
+        border-bottom: solid 1px $bg-color-lightgray
+        padding-bottom: 20px
+        .color-topic
+          font-weight: bold
+          font-size: 18px
+          padding-bottom: 20px
+        .color-selector
+          div
+            padding-bottom: 10px
+      .grand-rated
+        padding-top: 20px
+        width: 92%
+        border-bottom: solid 1px $bg-color-lightgray
+        .rated-topic
+          font-weight: bold
+          font-size: 18px
+          padding-bottom: 20px
+        .rated-selector
+          flex-direction: column
+          div
+            flex-direction: row
+            padding-bottom: 20px
+            width: 95%
+            justify-content: space-between
+            .img
+              width: 80px
+              height: 100px
+              background-color: $bg-color-black
+            .content
+              font-weight: bold
+              width: 60%
+              flex-direction: column
+              .price
+                margin-top: 20px
+                color: $txt-color-green
+      .grand-banner
+        padding-top: 40px
+        width: 92%
+        justify-content: center
+        .banner-container
+          background-image: url("../img/relaxed.jpg")
+          width: 90%
+          height: 250px
+          background-repeat: no-repeat
+          background-position: center
+          justify-content: center
+          align-content: center
+          align-items: center
+          .banner-content
+            width: 220px
+            height: 150px
+            background-color: #2f2e2e
+            outline: solid 2px $txt-color-white
+            outline-offset: -6px
+            color: $txt-color-white
+            flex-direction: column
             justify-content: center
-            align-content: center
             align-items: center
+            align-content: center
+
+
 
 

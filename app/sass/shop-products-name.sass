@@ -1,0 +1,192 @@
+@import "color"
+.path
+  width: 100%
+  flex-direction: row
+  justify-content: center
+  padding-bottom: 20px
+  .pages
+    width: 60%
+.product-view
+  justify-content: center
+  .product
+    width: 60%
+    flex-direction: row
+    flex-wrap: wrap
+    .product-gallery
+      width: 465.75px
+      flex-direction: column
+      .gallery-main
+        background-color: $bg-color-black
+        width: 450px
+        height: 600px
+        margin-bottom: 20px
+      .gallery-slider
+        width: 450px
+        height: 120px
+        border: solid 1px $bg-color-lightgray
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        .slider-img
+          width: 90px
+          height: 110px
+          background-color: $bg-color-black
+        .slider-left-btn,
+        .slider-right-btn
+          height: 100%
+          width: 30px
+          background-color: $bg-color-lightgray
+          color: $txt-color-black
+          text-align: center
+          transition: 1s
+          align-items: center
+          justify-content: center
+          cursor: pointer
+          &:hover
+            background-color: $txt-color-green
+            color: $txt-color-white
+    .product-content
+      width: 569.25px
+      .content-topic
+        font-weight: bold
+        font-size: 24px
+      .content-price-star
+        width: 30%
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        align-content: center
+        .price
+          font-size: 24px
+          color: $txt-color-green
+        .star
+          color: orange
+      .content-description
+        font-weight: bold
+        width: 80%
+        padding-top: 30px
+        padding-bottom: 40px
+        border-bottom: solid 1px $bg-color-lightgray
+      .buy-container
+        padding-top: 40px
+        .buy-select
+          width: 80%
+          flex-direction: row
+          justify-content: space-between
+          select
+            width: 45%
+            font-weight: bold
+            height: 40px
+      .buy-it
+        .quantity
+          padding-top: 30px
+          width: 226px
+          justify-content: space-between
+          input,
+          textarea
+            border: 1px solid #eeeeee
+            box-sizing: border-box
+            margin: 0
+            outline: none
+            padding: 10px
+          input[type="number"]
+            width: 160px
+            margin: 0px 0px
+            padding-left: 35%
+          input[type="button"]
+            width: 33px
+            font-weight: bold
+            font-size: 18px
+        .buy-btns
+          padding-top: 30px
+          width: 226px
+          flex-direction: row
+          justify-content: space-between
+          align-content: center
+          align-items: center
+          .btn-add
+            width: 130px
+            height: 40px
+            color: $txt-color-white
+            background-color: $bg-color-green
+            flex-direction: row
+            justify-content: center
+            align-content: center
+            align-items: center
+            border: 0
+          .btn-like,
+          .btn-refresh
+            background-color: $bg-color-white
+            color: $txt-color-black
+            height: 40px
+            width: 40px
+            justify-content: center
+            align-items: center
+            border: solid 1px $bg-color-lightgray
+.description-reviews
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  align-content: center
+  .description-reviews-container
+    padding-top: 30px
+    width: 60%
+    .reclick
+      flex-direction: row
+      .description,
+      .reviews
+        font-weight: bold
+        height: 50px
+        justify-content: center
+        align-content: center
+        align-items: center
+        width: 100px
+        cursor: pointer
+      .description
+        background-color: $bg-color-lightgray
+    .description-txt
+      font-weight: bold
+      background-color: $bg-color-lightgray
+      flex-direction: column
+      padding: 0px 20px
+      p
+        padding-bottom: 30px
+.related-products
+  justify-content: center
+  .related-container
+    padding-top: 50px
+    width: 61%
+    flex-direction: column
+    .related-top
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      align-content: center
+      height: 40px
+      padding-bottom: 20px
+      .top-topic
+        font-weight: bold
+        font-size: 18px
+      .top-arrows
+        flex-direction: row
+        justify-content: space-between
+    .related-main
+      justify-content: space-between
+      padding-bottom: 100px
+      flex-wrap: wrap
+      .product
+        width: 270px
+        padding-bottom: 20px
+        margin: 0
+        .product-img
+          width: 270px
+          background-color: $txt-color-black
+          height: 400px
+        .product-title
+          font-weight: bold
+          font-size: 16px
+        .product-price
+          color: $txt-color-green
+          font-size: 16px
+        .product-stars
+          color: $star-color-orange
