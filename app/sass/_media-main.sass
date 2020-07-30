@@ -21,6 +21,12 @@
       display: none
     .nav-down
       flex-direction: column
+      .down-open-menu
+        display: block
+        align-self: flex-start
+        position: absolute
+        top: 35px
+        left: 25px
       .down-menu
         background-color: $txt-color-white
         flex-direction: column
@@ -33,7 +39,8 @@
         width: 100%
         transition: 1s
         opacity: 0
-        height: 220px
+        height: 230px
+        z-index: 10
         a
           text-align: center
           width: fit-content
@@ -42,6 +49,7 @@
         left: 0
         opacity: 1
       .down-icons
+        padding-top: 10px
         flex-direction: row
         flex-wrap: nowrap
         position: absolute
@@ -50,6 +58,7 @@
         left: -1000px
         opacity: 0
         transition: 2s
+        z-index: 10
       .show-icons
         opacity: 1
         left: 0
@@ -63,20 +72,29 @@
       height: 200px
       width: 250px
 
-.path
-  display: none
-.cart
-  .tbl-container
-    display: block
-    width: 100%
-    overflow-x: auto
+  .path
+    display: none
+  .cart
+    .tbl-container
+      display: block
+      width: 100%
+      overflow-x: auto
 
-.product-view
-  flex-direction: column
-  justify-content: center
-  align-content: center
-  align-items: center
-  .product
+  .product-view-big
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
+    .product
+      width: 450px
+  .related-products
+    .related-container
+      .related-top
+        display: none
+      .related-main
+        .product
+          margin-right: auto
+          margin-left: auto
 
 
 @media screen and (max-width: 1400px)
@@ -193,26 +211,55 @@
         text-align: center
         .requisites-cards
           width: 280px
-.info
-  .info-container
-    .info-left
-      .coupon
-        .coupon-input
-          div
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            align-content: center
-            input
-              width: 100%
-              height: 50px
-            button
-              margin-top: 10px
-              width: 100%
-    .info-right
-      padding-top: 20px
-      .gift
-          .gift-input
+  .product-view-big
+    .product
+      width: 100%
+      .product-gallery
+        .gallery-main
+          width: 300px
+          height: 400px
+          margin-left: auto
+          margin-right: auto
+        .gallery-slider
+          width: 300px
+          margin-right: auto
+          margin-left: auto
+          .slider-img
+            width: 70px
+            height: 100px
+      .product-content
+        width: 300px
+        margin-left: auto
+        margin-right: auto
+        .content-topic
+          width: 300px
+        .content-price-star
+          width: 100%
+          .star
+            width: 100px
+  .description-reviews
+    width: 100%
+    .description-reviews-container
+      width: 100%
+      .reclick
+        width: 300px
+        .description,
+        .reviews
+          width: 50%
+  .related-products
+    .related-container
+      width: 100%
+      .related-top
+        display: none
+      .related-main
+        flex-direction: column
+        margin-left: auto
+        margin-right: auto
+  .info
+    .info-container
+      .info-left
+        .coupon
+          .coupon-input
             div
               flex-direction: column
               justify-content: center
@@ -224,7 +271,65 @@
               button
                 margin-top: 10px
                 width: 100%
-  .info-footer
-    .upd,
-    .proceed
-      width: 200px
+      .info-right
+        padding-top: 20px
+        .gift
+            .gift-input
+              div
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                align-content: center
+                input
+                  width: 100%
+                  height: 50px
+                button
+                  margin-top: 10px
+                  width: 100%
+    .info-footer
+      .upd,
+      .proceed
+        width: 200px
+
+@media screen and (max-width: 1875px)
+  .grid
+    .grid-filter-container
+      margin-left: auto
+      margin-right: auto
+      justify-content: center
+      align-items: center
+      align-content: center
+      width: auto
+      .grand-filter
+        align-self: flex-start
+        position: absolute
+        left: -1000px
+        transition: 1s
+        background-color: $bg-color-white
+        padding-left: 5px
+        width: 300px
+      .show-filter
+        left: 0
+      .grid-main
+        .btn-open-filter
+          display: block
+          margin-bottom: 20px
+@media screen and (max-width: 1200px)
+  .grid
+    .grid-filter-container
+      .grid-main
+        .filter
+          display: none
+@media screen and (max-width: 720px)
+  .grid
+    .grid-filter-container
+      .grand-filter
+        margin-top: 42px
+        width: 320px
+      .grid-main
+        width: 100%
+        .grid-container
+          width: 100%
+          .product
+            margin-right: auto
+            margin-left: auto

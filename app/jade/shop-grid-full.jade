@@ -27,7 +27,7 @@ html(lang="en")
                     a(href="#") Checkout
             section(class="grid wrapper")
                 .grid-filter-container.wrapper
-                    .grand-filter.wrapper
+                    .grand-filter.wrapper#filter
                         .grand-categories
                             .categories-topic CATEGORIES
                             .categories-list
@@ -100,6 +100,7 @@ html(lang="en")
                                     option Sort by newest
                                     option Sort by oldest
                                     option Sort by popularity
+                        .btn-open-filter#filter_btn FILTER
                         .grid-container.wrapper
                             each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack"]
                                 .product
@@ -123,3 +124,4 @@ html(lang="en")
                                 a(href="#") >
                                 a(href="#") >>
             include footer
+            script(src="js/common.js")
