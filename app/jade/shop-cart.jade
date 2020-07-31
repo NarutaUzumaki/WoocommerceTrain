@@ -74,11 +74,11 @@ html(lang="en")
 					.info-container.wrapper
 						.info-left.wrapper
 							.coupon.wrapper
-								.coupon-topic USE COUPON CODE
+								.coupon-topic Write your data
 								.coupon-input.wrapper
-									label Enter Your Coupon Here
+									label Enter Your Last Name
 									div.wrapper
-										input(placeholder="Enter your coupon here")
+										input(placeholder="Enter your Last Name here")
 										button Apply
 							.shipping.wrapper
 								.shipping-topic SHIPPING AVAILABILITY
@@ -97,12 +97,13 @@ html(lang="en")
 									input(placeholder="Postcode/Zip")
 						.info-right.wrapper
 							.gift.wrapper
-								.gift-topic USE GIFT VOUCHER
+								.gift-topic WRITE YOUR EMAIL
 								.gift-input.wrapper
-									label Enter Your Gift Voucher Here
+									label Enter Your Email Voucher Here
 									div.wrapper
-										input(placeholder="Enter your gift voucher here")
-										button Apply
+										form
+											input(placeholder="Enter your email here" type="email")
+											button(type="submit") Apply
 							.shopping.wrapper
 								.shopping-topic SHOPPING CART CALCULATION
 								.shopping-info.wrapper
