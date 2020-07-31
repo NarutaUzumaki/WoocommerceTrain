@@ -68,17 +68,17 @@ html(lang="en")
                             .rated-topic TOP RATED
                             .rated-selector.wrapper
                                 div.wrapper
-                                    .img
+                                    .img(style="background-image: url(../img/product/bag2.jpg)")
                                     .content.wrapper
                                         .txt Casual men wearing cool shoe
                                         .price $250.00
                                 div.wrapper
-                                    .img
+                                    .img(style="background-image: url(../img/product/bag2.jpg)")
                                     .content.wrapper
                                         .txt Casual men wearing cool shoe
                                         .price $250.00
                                 div.wrapper
-                                    .img
+                                    .img(style="background-image: url(../img/product/bag2.jpg)")
                                     .content.wrapper
                                         .txt Casual men wearing cool shoe
                                         .price $250.00
@@ -104,8 +104,8 @@ html(lang="en")
                         .btn-open-filter#filter_btn FILTER
                         .grid-container.wrapper
                             each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack"]
-                                .product
-                                    .product-img
+                                a.product(href="shop-products-name.html")
+                                    .product-img(style="background-image: url(../img/product/bag4.jpg)")
                                     .product-title= title
                                     .product-price $250.00
                                     .product-stars

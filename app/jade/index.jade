@@ -13,7 +13,11 @@ html(lang="en")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js")
 			body
 				include header
-				section(class="slider wrapper" style="background-image: url(../img/slider-img/krossovki_3.jpg)")
+				section(class="slider wrapper")
+					.slider-show
+						.slides.fade(style="background-image: url(../img/slider-img/krossovki_3.jpg)")
+						.slides.fade(style="background-image: url(../img/slider-img/krossovki_2.jpg)")
+						.slides.fade(style="background-image: url(../img/slider-img/krossovki_1.jpg)")
 					.slider-content.wrapper
 						.content-topic.wrapper
 							.topic-start THE BEST
@@ -27,7 +31,7 @@ html(lang="en")
 						.best-sentence The best production from us
 						.best-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					.sellers-first.wrapper
-						.first-img.wrapper
+						.first-img.wrapper(style="background-image: url(../img/product/cruise.jpg)")
 							.first-icons.wrapper
 								.shopping.wrapper
 									i.fa.fa-shopping-cart.fa-2x
@@ -44,7 +48,7 @@ html(lang="en")
 							i.fa.fa-star
 							i.fa.fa-star
 					.sellers-second.wrapper
-						.second-img
+						.second-img(style="background-image: url(../img/product/bag3.jpg)")
 						.second-title Crown Summit Backpack
 						.second-price $250.00
 						.second-stars
@@ -54,7 +58,7 @@ html(lang="en")
 							i.fa.fa-star
 							i.fa.fa-star
 					.sellers-third.wrapper
-						.third-img
+						.third-img(style="background-image: url(../img/product/bag2.jpg)")
 						.third-title Joust Duffle Bag
 						.third-price $250.00
 						.third-stars
@@ -64,7 +68,7 @@ html(lang="en")
 							i.fa.fa-star
 							i.fa.fa-star
 					.sellers-fourth.wrapper
-						.fourth-img
+						.fourth-img(style="background-image: url(../img/product/bag1.jpg)")
 						.fourth-title Voyage Yoga Bag
 						.fourth-price $250.00
 						.fourth-stars
@@ -119,8 +123,8 @@ html(lang="en")
 						.sentence Newest trends from top brends
 					.products-container.wrapper
 						each title in ["Cruise Dual Analog", "Crown summit Backpack", "Joust Duffle Bag", "Voyage Yoga Bag", "Compete Truck Tote", "Sprite Yoga Companion Kit", "Strive Shoulder Pack", "Impulse Duffle", "Fusion Backpack", "Endeavor Daytrip"]
-							.product
-								.product-img
+							a.product(href="shop-products-name.html")
+								.product-img(style="background-image: url(../img/product/bag4.jpg)")
 								.product-title= title
 								.product-price $250.00
 								.product-stars
@@ -143,3 +147,4 @@ html(lang="en")
 						.client-fourth.wrapper
 				include footer
 	script(src="js/common.js")
+	script(src="js/slider.js")

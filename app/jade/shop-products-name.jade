@@ -29,12 +29,12 @@ html(lang="en")
                 section.product-view-big.wrapper
                     .product.wrapper
                         .product-gallery.wrapper
-                            .gallery-main
+                            .gallery-main(style="background-image: url(../img/product/bag4.jpg)")
                             .gallery-slider.wrapper
                                 .slider-left-btn.wrapper <<
-                                .slider-img
-                                .slider-img
-                                .slider-img
+                                .slider-img(style="background-image: url(../img/product/bag3.jpg)")
+                                .slider-img(style="background-image: url(../img/product/bag2.jpg)")
+                                .slider-img(style="background-image: url(../img/product/bag1.jpg)")
                                 .slider-right-btn.wrapper >>
                         .product-content
                             .content-topic This is Product name
@@ -89,7 +89,7 @@ html(lang="en")
                         .related-main.wrapper
                             each title in ["Crown Summit Backpack", "Joust Duffle Bag", "Votage Yoga Bag", "Treatise on the"]
                                 .product
-                                    .product-img
+                                    .product-img(style="background-image: url(../img/product/bag1.jpg)")
                                     .product-title= title
                                     .product-price $250.00
                                     .product-stars
